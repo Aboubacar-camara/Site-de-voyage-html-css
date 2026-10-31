@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Informations sur la page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Explorer, agence de voyage à Dakar : billets, hôtels et circuits sur mesure vers Saly, Marrakech et Zanzibar.">
+    <title>Travel Explorer - Agence de voyage</title>
+
+    <!-- Icône de l'onglet du navigateur -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Police Google Fonts : Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <!-- Notre feuille de style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header : logo à gauche, menu à droite -->
+    <header>
+        <div class="conteneur entete-ligne">
+
+            <!-- Logo -->
+            <a href="#accueil" class="logo">
+                <span class="logo-cercle">
+                    <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M2 12h20"></path>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </span>
+                <span class="logo-texte">Travel <span>Explorer</span></span>
+            </a>
+
+            <!-- Menu de navigation : chaque lien mène à une section (ancre) -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="#accueil" class="lien-menu">Accueil</a></li>
+                    <li><a href="#destinations" class="lien-menu">Destinations</a></li>
+                    <li><a href="#services" class="lien-menu">Services</a></li>
+                    <li><a href="#a-propos" class="lien-menu">À propos</a></li>
+                    <li><a href="#contact" class="lien-menu bouton-orange">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Section Accueil (Hero) -->
+        <section id="accueil">
+            <!-- Le voile bleu nuit recouvre la photo pour que le texte reste lisible -->
+            <div class="hero-voile">
+                <div class="conteneur hero-contenu">
+                    <p class="surtitre surtitre-orange">Agence de voyage</p>
+                    <h1>Partez à la découverte du monde avec Travel Explorer</h1>
+                    <p class="hero-texte">Billets, hôtels, circuits sur mesure&nbsp;: nous organisons votre voyage de A à Z pour que vous n'ayez plus qu'à profiter.</p>
+                    <a href="#destinations" class="bouton-orange bouton-pilule bouton-hero">Découvrir nos destinations</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Destinations -->
+        <section id="destinations" class="section">
+            <div class="conteneur">
+
+                <!-- En-tête de section -->
+                <div class="entete-section">
+                    <h2>Nos destinations</h2>
+                    <p>Trois coups de cœur sélectionnés par notre équipe pour vos prochaines vacances.</p>
+                </div>
+
+                <!-- Grille des 3 cartes -->
+                <div class="grille-destinations">
+
+                    <!-- Carte 1 : Saly -->
+                    <article class="carte-destination">
+                        <div class="carte-image">
+                            <img src="images/destination1.jpg" alt="Plage de sable fin au coucher du soleil, bordée par une mer turquoise">
+                            <span class="badge">Plage</span>
+                        </div>
+                        <div class="carte-corps">
+                            <h3>Saly, Sénégal</h3>
+                            <p>Sable fin, soleil toute l'année et détente sur la Petite-Côte, à une heure de Dakar.</p>
+                            <div class="carte-pied">
+                                <span>À partir de <strong>[PRIX]</strong></span>
+                                <a href="#contact" class="bouton-contour">En savoir plus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Carte 2 : Marrakech -->
+                    <article class="carte-destination">
+                        <div class="carte-image">
+                            <img src="images/destination2.jpg" alt="Allée d'un souk de Marrakech avec des tapis colorés et des étals d'artisanat">
+                            <span class="badge">Culture</span>
+                        </div>
+                        <div class="carte-corps">
+                            <h3>Marrakech, Maroc</h3>
+                            <p>Souks colorés, jardins, riads traditionnels et escapade dans le désert.</p>
+                            <div class="carte-pied">
+                                <span>À partir de <strong>[PRIX]</strong></span>
+                                <a href="#contact" class="bouton-contour">En savoir plus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Carte 3 : Zanzibar -->
+                    <article class="carte-destination">
+                        <div class="carte-image">
+                            <img src="images/destination3.jpg" alt="Vue aérienne d'une plage de Zanzibar, entre palmiers et eaux turquoise">
+                            <span class="badge">Aventure</span>
+                        </div>
+                        <div class="carte-corps">
+                            <h3>Zanzibar, Tanzanie</h3>
+                            <p>Eaux turquoise, vieille ville de Stone Town et plantations d'épices.</p>
+                            <div class="carte-pied">
+                                <span>À partir de <strong>[PRIX]</strong></span>
+                                <a href="#contact" class="bouton-contour">En savoir plus</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Tableau des tarifs -->
+                <h3 class="titre-tarifs">Tableau des tarifs</h3>
+                <div class="tableau-conteneur">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Durée</th>
+                                <th>Inclus</th>
+                                <th>Prix par personne</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Saly, Sénégal</td>
+                                <td>5 jours</td>
+                                <td>Hôtel + transferts</td>
+                                <td class="colonne-prix">[PRIX]</td>
+                            </tr>
+                            <tr>
+                                <td>Marrakech, Maroc</td>
+                                <td>7 jours</td>
+                                <td>Vol + riad + visites</td>
+                                <td class="colonne-prix">[PRIX]</td>
+                            </tr>
+                            <tr>
+                                <td>Zanzibar, Tanzanie</td>
+                                <td>10 jours</td>
+                                <td>Vol + hôtel + excursions</td>
+                                <td class="colonne-prix">[PRIX]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="section">
+            <div class="conteneur">
+
+                <!-- En-tête de section -->
+                <div class="entete-section">
+                    <h2>Nos services</h2>
+                    <p>Tout ce qu'il faut pour voyager l'esprit tranquille.</p>
+                </div>
+
+                <!-- Les 4 blocs de services -->
+                <div class="liste-services">
+
+                    <!-- Service 1 : icône avion -->
+                    <div class="bloc-service">
+                        <div class="service-icone">
+                            <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Réservation de billets</h3>
+                        <p>Vols au meilleur prix vers toutes les destinations.</p>
+                    </div>
+
+                    <!-- Service 2 : icône bâtiment -->
+                    <div class="bloc-service">
+                        <div class="service-icone">
+                            <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                <path d="M9 22v-4h6v4"></path>
+                                <path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"></path>
+                            </svg>
+                        </div>
+                        <h3>Réservation d'hôtels</h3>
+                        <p>Des hébergements choisis pour leur confort et leur emplacement.</p>
+                    </div>
+
+                    <!-- Service 3 : icône carte -->
+                    <div class="bloc-service">
+                        <div class="service-icone">
+                            <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"></path>
+                                <path d="M8 2v16"></path>
+                                <path d="M16 6v16"></path>
+                            </svg>
+                        </div>
+                        <h3>Circuits touristiques</h3>
+                        <p>Des itinéraires sur mesure avec guides locaux.</p>
+                    </div>
+
+                    <!-- Service 4 : icône personnes -->
+                    <div class="bloc-service">
+                        <div class="service-icone">
+                            <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Accompagnement</h3>
+                        <p>Une équipe disponible avant, pendant et après le voyage.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="a-propos" class="section">
+            <div class="conteneur apropos-ligne">
+
+                <!-- Colonne de gauche : image de l'équipe (image de remplacement, voir README) -->
+                <div class="apropos-image">
+                    <img src="images/accueil.jpg" alt="Image de remplacement en attendant la photo de l'équipe : bateaux au large d'une plage">
+                </div>
+
+                <!-- Colonne de droite : texte -->
+                <div class="apropos-texte">
+                    <p class="surtitre surtitre-fonce">Qui sommes-nous&nbsp;?</p>
+                    <h2>Une agence passionnée de voyages</h2>
+                    <p>Fondée en <strong>[ANNÉE]</strong> à Dakar, <strong>Travel Explorer</strong> accompagne ses clients dans l'organisation de voyages <em>simples, sûrs et inoubliables</em>.</p>
+
+                    <!-- Mission et vision -->
+                    <div class="deux-blocs">
+                        <div>
+                            <h4>Notre mission</h4>
+                            <p>Rendre le voyage accessible et sans stress pour tous.</p>
+                        </div>
+                        <div>
+                            <h4>Notre vision</h4>
+                            <p>Devenir l'agence de référence pour découvrir l'Afrique et le monde.</p>
+                        </div>
+                    </div>
+
+                    <!-- Liste non ordonnée (ul) et liste ordonnée (ol) -->
+                    <div class="deux-blocs">
+                        <div>
+                            <h5>L'équipe</h5>
+                            <ul class="liste-texte">
+                                <li>[NOM] — Directeur</li>
+                                <li>[NOM] — Conseillère voyage</li>
+                                <li>[NOM] — Guide accompagnateur</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Réserver en 3 étapes</h5>
+                            <ol class="liste-texte">
+                                <li>Choisissez une destination</li>
+                                <li>Contactez-nous</li>
+                                <li>Préparez vos valises</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="conteneur contact-ligne">
+
+                <!-- Colonne de gauche : coordonnées -->
+                <div class="bloc-contact">
+                    <h2>Contactez-nous</h2>
+                    <p>Une question, un projet de voyage&nbsp;? Écrivez-nous, nous répondons sous 24&nbsp;h.</p>
+
+                    <!-- Adresse -->
+                    <div class="coordonnee">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>[ADRESSE], Dakar, Sénégal</span>
+                    </div>
+
+                    <!-- Téléphone -->
+                    <div class="coordonnee">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>[TÉLÉPHONE]</span>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="coordonnee">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="M22 6l-10 7L2 6"></path>
+                        </svg>
+                        <span>contact@[DOMAINE]</span>
+                    </div>
+                </div>
+
+                <!-- Colonne de droite : formulaire -->
+                <form class="formulaire" action="#contact" method="post">
+
+                    <div class="champ">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="+221 ...">
+                    </div>
+
+                    <div class="champ">
+                        <label for="destination">Destination souhaitée</label>
+                        <select id="destination" name="destination">
+                            <option>Saly, Sénégal</option>
+                            <option>Marrakech, Maroc</option>
+                            <option>Zanzibar, Tanzanie</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+
+                    <!-- Le message prend toute la largeur du formulaire -->
+                    <div class="champ champ-large">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre projet de voyage..."></textarea>
+                    </div>
+
+                    <button type="submit" class="bouton-orange bouton-pilule bouton-formulaire">Envoyer le message</button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="pied-contenu">
+
+            <div class="pied-ligne">
+
+                <!-- Nom de l'agence (titre h6, même style que le logo) -->
+                <h6 class="logo-texte">Travel <span>Explorer</span></h6>
+
+                <!-- Réseaux sociaux : liens externes ouverts dans un nouvel onglet -->
+                <div class="reseaux">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" class="bouton-reseau">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" class="bouton-reseau">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <path d="M17.5 6.5h.01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn" class="bouton-reseau">
+                        <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <!-- Même lien que le bouton flottant : remplacer aussi 221XXXXXXXXX ici -->
+                    <a href="https://wa.me/221XXXXXXXXX?text=Bonjour%20Travel%20Explorer%2C%20je%20souhaite%20des%20informations%20sur%20vos%20voyages." target="_blank" rel="noopener" aria-label="Discuter avec nous sur WhatsApp" class="bouton-reseau bouton-reseau-whatsapp">
+                        <img src="images/whatsapp.svg" alt="WhatsApp" class="icone">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Ligne de séparation et copyright -->
+            <p class="copyright">© 2026 Travel Explorer. Tous droits réservés.</p>
+
+        </div>
+    </footer>
+
+    <!-- Bouton WhatsApp flottant -->
+    <!-- Format du lien : https://wa.me/NUMERO?text=MESSAGE
+         NUMERO : remplacer 221XXXXXXXXX par le numéro WhatsApp de l'entreprise au format
+         international, SANS le « + », sans espaces ni zéros devant (221 = Sénégal).
+         MESSAGE : texte déjà écrit quand la discussion s'ouvre.
+         Dans une adresse, les espaces s'écrivent %20 et les virgules %2C. -->
+    <a href="https://wa.me/221XXXXXXXXX?text=Bonjour%20Travel%20Explorer%2C%20je%20souhaite%20des%20informations%20sur%20vos%20voyages." target="_blank" rel="noopener" aria-label="Discuter avec nous sur WhatsApp" class="bouton-whatsapp">
+        <img src="images/whatsapp.svg" alt="WhatsApp" class="icone">
+    </a>
+
+</body>
+
+</html>
